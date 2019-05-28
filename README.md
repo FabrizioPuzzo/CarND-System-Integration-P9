@@ -138,13 +138,13 @@ The main functionality of the Waypoint Updater node is to calculate the correct 
 
 The twist controller package contains two main modules: dbw_node.py and twist_controller.py. 
 
-The dbw_node.py, subscribes to the ROS-topics '/current_velocity', '/twist_cmd', and '/vehicle/dbw_enabled' and publishes the thottle, steering and brake signals. 
+The dbw_node.py, subscribes to the ROS-topics `/current_velocity`, `/twist_cmd`, and `/vehicle/dbw_enabled` and publishes the thottle, steering and brake signals. 
 
-In the twist controller, a yaw controller (steering signal) and a PID controller (throttle signal) are implemented. Those signals are published to the ROS-Topic '/twist_cmd'.
+In the twist controller, a yaw controller (steering signal) and a PID controller (throttle signal) are implemented. Those signals are published to the ROS-Topic `/twist_cmd`.
 
 
 ### Traffic Light Detection
 
-The tl_detector.py module subscribes to the ROS-topics '/current_pose', '/base_waypoints', '/image_color'(= Image input from camera) and publishes the waypoint index of the nearest RED light to the ROS-topic '/traffic_waypoint' (if detected). This module uses the traffic light classifier defined in the modle tl_classifier.py.
+The tl_detector.py module subscribes to the ROS-topics `/current_pose`, `/base_waypoints`, `/image_color`(= Image input from camera) and publishes the waypoint index of the nearest RED light to the ROS-topic `/traffic_waypoint` (if detected). This module uses the traffic light classifier defined in the modle tl_classifier.py.
 
-In this project a SSD Inception V2 model is used to classify the traffic light state. Two seperate models are trained: One for simulator and one for the real-world application. Both models are saved under './ros/src/tl_detector/light_classification/model/.
+In this project a SSD Inception V2 model is used to classify the traffic light state. Two seperate models are trained: One for simulator and one for the real-world application. Both models are saved under ./ros/src/tl_detector/light_classification/model/.
