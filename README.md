@@ -7,6 +7,10 @@ This repo contains my solution to the Capstone Project: System Integration Proje
 
 ---
 
+#### Individual Submission: Fabrizio Puzzo - fabriziopuzzo1@gmail.com
+
+---
+
 
 ![](/img/simulator.png)
 
