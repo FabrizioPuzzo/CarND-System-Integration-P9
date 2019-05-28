@@ -147,4 +147,4 @@ In the twist controller, a yaw controller (steering signal) and a PID controller
 
 The tl_detector.py module subscribes to the ROS-topics `/current_pose`, `/base_waypoints`, `/image_color`(= Image input from camera) and publishes the waypoint index of the nearest RED light to the ROS-topic `/traffic_waypoint` (if detected). This module uses the traffic light classifier defined in the modle tl_classifier.py.
 
-In this project a [!SSD Inception V2 model](https://supervise.ly/explore/models/ssd-inception-v-2-coco-1861/overview) is used to classify the traffic light state. Two seperate models are trained: One for simulator and one for the real-world application. Both models are saved under ./ros/src/tl_detector/light_classification/model/.
+In this project a [SSD Inception V2 model](https://supervise.ly/explore/models/ssd-inception-v-2-coco-1861/overview) is used to classify the traffic light state. Two seperate models are trained: One for simulator and one for the real-world application. Both models are saved under ./ros/src/tl_detector/light_classification/model/.
