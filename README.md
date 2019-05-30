@@ -18,7 +18,7 @@ This repo contains my solution to the Capstone Project: System Integration Proje
 
 ## Project Overview
 
-   In this project, the task is to write ROS nodes to implement core functionality of the autonomous vehicle system, including detection of traffic lights, control, lane following. The code is tested using a simulator and run on a real car named Carla. The system architecture diagram including ROS topics and ROS nodes is shonw below: 
+   In this project, the task is to write ROS nodes to implement core functionality of the autonomous vehicle system, including detection of traffic lights, control, lane following. The code is tested using a simulator and run on a real car named Carla. The system architecture diagram including ROS topics and ROS nodes is shown below: 
 ![](/img/system_architecture.png)
 
 ### Subsystems
