@@ -39,7 +39,7 @@ The ROS Architecture consists of different nodes (written in Python or C++) that
 
 ### Tasks
 
-The three main Task of the project were the following:
+The three main tasks of the project were the following:
 
 
    1. Perception - Implementation of a traffic light detection node. (Deep learning network model for the traffic light classification). 
