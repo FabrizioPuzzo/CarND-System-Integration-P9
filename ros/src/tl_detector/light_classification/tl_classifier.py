@@ -9,10 +9,10 @@ class TLClassifier(object):
 
 
         # Use model for simulator
-        graph_path = 'light_classification/model/frozen_inference_graph_sim.pb'
+        #graph_path = 'light_classification/model/frozen_inference_graph_sim.pb'
 
         # Use model for real world (Carla)
-        #graph_path = 'light_classification/model/frozen_inference_graph_real.pb'
+        graph_path = 'light_classification/model/frozen_inference_graph_real.pb'
 
         # Initialize graph
         self.graph = tf.Graph()
